@@ -1,0 +1,50 @@
+:root {
+	--background: #fff;
+	--color: rgba(0, 0, 0, 0.87);
+
+	--background-x-light: #f8f9fa;
+	--color-x-light: #3c4043;
+
+	--background-light: #f2f2f2;
+	--color-light: rgba(0, 0, 0, 0.54);
+
+	--border-color: #dfe1e5;
+	--hover-color: rgba(60, 64, 67, 0.08);
+
+	--primary-background: #1a73e8;
+	--primary-color: #4285f4;
+
+	--input-color: #80868b;
+	--shadow-color: #20212447;
+}
+
+html,
+body {
+	background-color: var(--background);
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.show-sm {
+	display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+	.hidden-sm {
+		display: none !important;
+	}
+
+	.show-sm {
+		display: flex !important;
+	}
+}
