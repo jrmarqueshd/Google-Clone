@@ -8,7 +8,7 @@ export default function Home() {
 			<main>
 				<img src="/images/logo.png" alt="Google" />
 
-				<Input />
+				<Input fixedOnFocus />
 
 				<div className={`${styles.buttonsContainer} show-sm`}>
 					<button type="button">Pesquisa Google</button>

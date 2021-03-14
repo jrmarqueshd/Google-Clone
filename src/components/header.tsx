@@ -1,11 +1,14 @@
 import React from "react";
+import Link from "next/link";
 import { FiMenu, FiGrid } from "react-icons/fi";
 import { signIn, signOut, useSession } from "next-auth/client";
+import { useRouter } from "next/router";
 
 import styles from "../styles/components/header.module.css";
 
 export default function Header() {
-	const [session, loading] = useSession();
+	const [session] = useSession();
+	const router = useRouter();
 
 	return (
 		<header className={styles.container}>
@@ -14,9 +17,23 @@ export default function Header() {
 					<FiMenu />
 				</button>
 				<ul>
-					<li className={`${true ? styles.active : ""} hidden-sm`}>Todas</li>
+					<li
+						className={`${
+							router.pathname === "/" ? styles.active : ""
+						} hidden-sm`}
+					>
+						<Link href="/">
+							<a>Todas</a>
+						</Link>
+					</li>
 					<li className="show-sm">Gmail</li>
-					<li className={false ? styles.active : ""}>Imagens</li>
+					<li
+						className={router.pathname.includes("/imghp") ? styles.active : ""}
+					>
+						<Link href="/imghp">
+							<a>Imagens</a>
+						</Link>
+					</li>
 				</ul>
 			</div>
 			<div className={styles.userContainer}>

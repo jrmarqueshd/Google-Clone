@@ -43,6 +43,18 @@
 	border-color: var(--border-color);
 }
 
+.logoWrapper {
+	position: relative;
+}
+
+.logoWrapper .imagesLabel {
+	position: absolute;
+	color: var(--primary-color);
+	font-size: 11px;
+	left: 126px;
+	top: 78px;
+}
+
 @media screen and (min-width: 768px) {
 	.container main {
 		align-items: center;
@@ -54,5 +66,11 @@
 	.container main img {
 		max-width: 272px;
 		margin: 0 0 20px;
+	}
+
+	.logoWrapper .imagesLabel {
+		font-size: 16px;
+		left: 215px;
+		top: 73px;
 	}
 }

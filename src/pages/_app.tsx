@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<Provider session={pageProps.session}>
 			<Head>
-				<title>Clone Google</title>
+				<title>Google Clone</title>
 			</Head>
 
 			<Header />
