@@ -83,6 +83,45 @@
 	font-weight: 600;
 }
 
+.headerSearch {
+	display: grid;
+	grid-template-areas:
+		"buttonMenu logo auth"
+		"search search search";
+	row-gap: 8px;
+}
+
+.headerSearch .menuContainer {
+	grid-area: buttonMenu;
+}
+
+.headerSearch .logoWrapper {
+	display: flex;
+	align-items: center;
+	grid-area: logo;
+}
+
+.headerSearch .logoWrapper img {
+	width: 100%;
+	max-width: 92px;
+}
+
+.headerSearch .logoWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.headerSearch .userContainer {
+	grid-area: auth;
+	justify-content: flex-end;
+}
+
+.headerSearch .inputWrapper {
+	grid-area: search;
+	margin: 0 8px;
+}
+
 @media screen and (min-width: 768px) {
 	.container {
 		justify-content: flex-end;
@@ -121,5 +160,16 @@
 
 	.userContainer .loginButton:hover {
 		background-color: var(--primary-color);
+	}
+
+	.headerSearch {
+		grid-template-areas: "logo search auth";
+		grid-template-columns: 100px 1fr 120px;
+		justify-content: space-between;
+	}
+
+	.headerSearch .inputWrapper > div {
+		justify-content: flex-start;
+		margin-left: 30px;
 	}
 }
