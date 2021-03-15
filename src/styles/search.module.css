@@ -1,0 +1,18 @@
+.container .newsWrapper {
+	width: 100%;
+	max-width: 652px;
+	padding: 0 8px;
+}
+
+.container .newsWrapper .amountResults {
+	color: var(--color-light);
+	background-color: transparent;
+	line-height: 43px;
+	font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding-left: 150px;
+	}
+}

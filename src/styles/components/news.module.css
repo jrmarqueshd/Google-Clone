@@ -1,0 +1,82 @@
+.container {
+	padding: 16px;
+	max-width: 600px;
+}
+
+.container header {
+}
+
+.container header a {
+}
+
+.container header a span {
+	font-size: 12px;
+	color: var(--color-light);
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.container header a h2 {
+	color: var(--primary-color);
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0;
+}
+
+.container main {
+	color: var(--color-x-light);
+	font-size: 14px;
+}
+
+.container footer .tagsContainer {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	overflow: auto;
+}
+
+.container footer .tagsContainer a {
+	border: 1px solid var(--border-color);
+	font-size: 14px;
+	color: var(--primary-color);
+	padding: 6px 8px;
+	border-radius: 4px;
+}
+
+.container footer .lastVisit {
+	color: var(--color-light);
+	font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 16px 8px;
+	}
+
+	.container header a span {
+		font-size: 14px;
+		margin-bottom: 4px;
+	}
+
+	.container header a h2 {
+		font-size: 20px;
+	}
+
+	.container header a:hover h2 {
+		text-decoration: underline;
+	}
+
+	.container main p {
+		line-height: 22px;
+		margin: 0;
+	}
+
+	.container footer .tagsContainer {
+		flex-wrap: wrap;
+		gap: 8px;
+		overflow: initial;
+		margin-top: 8px;
+	}
+}
