@@ -10,6 +10,7 @@ interface InputProps {
 	imagesView?: boolean;
 	fixedOnFocus?: boolean;
 	hiddenRightIcons?: boolean;
+	value: string;
 	setValue: (p: string) => void;
 	handleSubmit: (p: React.FormEvent) => void;
 }
@@ -18,6 +19,7 @@ export default function Input({
 	imagesView,
 	fixedOnFocus,
 	hiddenRightIcons,
+	value,
 	setValue,
 	handleSubmit,
 }: InputProps) {
@@ -41,6 +43,7 @@ export default function Input({
 					onFocus={() => setIsFocused(true)}
 					onBlur={() => setIsFocused(false)}
 					onChange={handleChange}
+					defaultValue={value}
 				/>
 
 				<div

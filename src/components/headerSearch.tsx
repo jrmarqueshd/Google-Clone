@@ -8,7 +8,7 @@ import styles from "../styles/components/header.module.css";
 import Input from "./input";
 
 export default function HeaderSearch() {
-	const { handleSubmit, setValue } = useContext(SearchContext);
+	const { handleSubmit, setValue, value } = useContext(SearchContext);
 	const [session] = useSession();
 
 	return (
@@ -50,7 +50,7 @@ export default function HeaderSearch() {
 			</div>
 
 			<div className={styles.inputWrapper}>
-				<Input handleSubmit={handleSubmit} setValue={setValue} />
+				<Input handleSubmit={handleSubmit} setValue={setValue} value={value} />
 			</div>
 		</header>
 	);

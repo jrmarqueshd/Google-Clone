@@ -8,6 +8,7 @@ interface SearchProviderTypes {
 interface SearchContextTypes {
 	setValue: (p: string) => void;
 	handleSubmit: (p: React.FormEvent) => void;
+	value: string;
 }
 
 export const SearchContext = React.createContext({} as SearchContextTypes);
@@ -19,13 +20,15 @@ export function SearchProvider({ children }: SearchProviderTypes) {
 	function handleSubmit(event: React.FormEvent) {
 		event.preventDefault();
 
-		router.push({
+		if (!value) return null;
+
+		return router.push({
 			pathname: `/search/${value}`,
 		});
 	}
 
 	return (
-		<SearchContext.Provider value={{ setValue, handleSubmit }}>
+		<SearchContext.Provider value={{ setValue, handleSubmit, value }}>
 			{children}
 		</SearchContext.Provider>
 	);
