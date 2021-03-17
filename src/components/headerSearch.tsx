@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import Link from "next/link";
 import { FiMenu, FiGrid } from "react-icons/fi";
 import { signIn, signOut, useSession } from "next-auth/client";
-import { useRouter } from "next/router";
+import { SearchContext } from "../context/searchContext";
 
 import styles from "../styles/components/header.module.css";
 import Input from "./input";
 
 export default function HeaderSearch() {
+	const { handleSubmit, setValue } = useContext(SearchContext);
 	const [session] = useSession();
-	const router = useRouter();
 
 	return (
 		<header className={`${styles.container} ${styles.headerSearch}`}>
@@ -20,7 +20,11 @@ export default function HeaderSearch() {
 			</div>
 
 			<div className={styles.logoWrapper}>
-				<img src="/images/logo.png" alt="Google Clone" />
+				<Link href="/">
+					<a>
+						<img src="/images/logo.png" alt="Google Clone" />
+					</a>
+				</Link>
 			</div>
 
 			<div className={styles.userContainer}>
@@ -46,7 +50,7 @@ export default function HeaderSearch() {
 			</div>
 
 			<div className={styles.inputWrapper}>
-				<Input />
+				<Input handleSubmit={handleSubmit} setValue={setValue} />
 			</div>
 		</header>
 	);

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
 import SearchMenu from "../../components/searchMenu";
 import News from "../../components/news";
@@ -8,8 +9,14 @@ import mockNews from "../../data/news.json";
 import styles from "../../styles/search.module.css";
 
 export default function SearchPage({ data = mockNews }) {
+	const router = useRouter();
+
 	return (
 		<div className={styles.container}>
+			<Head>
+				<title>{router?.query?.param} - Pesquisa Google</title>
+			</Head>
+
 			<SearchMenu />
 
 			<div className={styles.newsWrapper}>
@@ -20,7 +27,7 @@ export default function SearchPage({ data = mockNews }) {
 
 			{data?.map((news, index) => (
 				<News
-					key={news.title + index}
+					key={index + ""}
 					title={news.title}
 					description={news.description}
 					link={news.link}
