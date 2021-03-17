@@ -1,9 +1,13 @@
 import Head from "next/head";
+import { useContext } from "react";
 import Input from "../components/input";
+import { SearchContext } from "../context/searchContext";
 
 import styles from "../styles/home.module.css";
 
 export default function Home() {
+	const { setValue, handleSubmit, value } = useContext(SearchContext);
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -16,7 +20,13 @@ export default function Home() {
 					<div className={styles.imagesLabel}>Imagens</div>
 				</div>
 
-				<Input imagesView hiddenRightIcons />
+				<Input
+					imagesView
+					hiddenRightIcons
+					handleSubmit={handleSubmit}
+					setValue={setValue}
+					value={value}
+				/>
 			</main>
 		</div>
 	);
