@@ -17,7 +17,7 @@ export default function SearchPage({ data }) {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>{router?.query?.param} - Pesquisa Google</title>
+				<title>{router?.query?.search} - Pesquisa Google</title>
 			</Head>
 
 			<SearchMenu />
