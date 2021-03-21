@@ -17,6 +17,11 @@
 	margin-bottom: 12px;
 }
 
+.container header a span strong {
+	color: var(--color-light);
+	margin-right: 4px;
+}
+
 .container header a h2 {
 	color: var(--primary-color);
 	font-size: 20px;

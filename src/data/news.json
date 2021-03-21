@@ -1,6 +1,7 @@
 [
 	{
 		"title": "Google Clone - Criando um clone do Google, usando NextJS.",
+		"ads": true,
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore laborum architecto harum perspiciatis nobis ex, magni veniam itaque aliquam laboriosam fuga blanditiis rem cupiditate. Numquam doloribus consequuntur aliquid mollitia?",
 		"link": "https://google-six.vercel.app",
 		"tags": [
@@ -21,6 +22,7 @@
 	},
 	{
 		"title": "Next.js by Vercel - The React Framework",
+		"ads": true,
 		"description": "Production grade React applications that scale. The world's leading companies use Next.js by Vercel to build static and dynamic websites and web applications.",
 		"link": "https://nextjs.org",
 		"tags": [
@@ -45,6 +47,7 @@
 	},
 	{
 		"title": "React – Uma biblioteca JavaScript para criar interfaces",
+		"ads": true,
 		"description": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.",
 		"link": "https://pt-br.reactjs.org",
 		"tags": [
@@ -66,131 +69,5 @@
 			}
 		],
 		"lastVisit": "09/09/20"
-	},
-	{
-		"title": "React – Uma biblioteca JavaScript para criar interfaces",
-		"description": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.",
-		"link": "https://pt-br.reactjs.org",
-		"tags": [
-			{
-				"link": "#",
-				"label": "Tutorial"
-			},
-			{
-				"link": "#",
-				"label": "Introdução"
-			},
-			{
-				"link": "#",
-				"label": "Hello world"
-			},
-			{
-				"link": "#",
-				"label": "Hooks"
-			}
-		],
-		"lastVisit": "09/09/20"
-	},
-	{
-		"title": "Subsequent scholars, such as G.",
-		"description": "After a triple-double from Johnson in Game 6, the Lakers defeated the Sixers 4–2, as Johnson won his second NBA Finals MVP award.",
-		"link": "http://occupation.for.edu",
-		"tags": null
-	},
-	{
-		"title": "Monks especially frequently suffered from obesity-related (in some cases) conditions such as arthritis.",
-		"description": "The black population of Vancouver is rather scant in comparison to other Canadian major cities, making up 0.",
-		"link": "http://water.lorne.net",
-		"tags": null
-	},
-	{
-		"title": "There is both a Junior Common Room (JCR), between Second and Third quad, and a Middle Common Room (MCR), on the Island Site.",
-		"description": "The chicks fledge in 46 to 47 days after hatching, but stay with the female until she has completed moulting.",
-		"link": "http://portrait.movement.edu",
-		"tags": null
-	},
-	{
-		"title": "The Fraser Gold Rush of 1858 brought over 25,000 men, mainly from California, to nearby New Westminster (founded February 14, 1859) on the Fraser River, on their way to the Fraser Canyon, bypassing what would become Vancouver.",
-		"description": "He made no apologies for the difficulties this posed to readers, insisting that the role of an artist was to ask questions, not to answer them.",
-		"link": "http://around.transoceanic.com",
-		"tags": null
-	},
-	{
-		"title": "As it is about ten minutes walk from College and more peaceful than the middle of the city, it has become the principal choice of accommodation for Oriel's graduates and finalists.",
-		"description": "Oswiu went further than this, however, and installed his own governors in Mercia after the deaths of Penda and Peada.",
-		"link": "http://used.more.com",
-		"tags": null
-	},
-	{
-		"title": "The manuscripts are all thought to derive from a common original, but the connections between the texts are more complex than simple inheritance via copying.",
-		"description": "By Christmas, as the Allies retreated from Malaya, Sembawang was \"the busiest airfield on Singapore island\", with two Dutch Glenn Martin bomber squadrons in addition to the remnants of the Hudson units, along with Nos.",
-		"link": "http://the.dissolved.edu",
-		"tags": null
-	},
-	{
-		"title": "Louise's brother, the Prince of Wales, was strongly opposed to a marriage with a non-mediatized noble.",
-		"description": "Speck wrote in the new Oxford Dictionary of National Biography that \"James was genuinely committed to religious toleration, but also sought to increase the power of the crown.",
-		"link": "http://relations.east.org",
-		"tags": null
-	},
-	{
-		"title": "Two modern buildings that define the southern skyline away from the downtown area are City Hall and the Centennial Pavilion of Vancouver Hospital, both designed by Townley and Matheson in 1936 and 1958 respectively.",
-		"description": "For his gallantry in two separate actions during this engagement, Whittle was awarded the Victoria Cross.",
-		"link": "http://on.widespread.com",
-		"tags": null
-	},
-	{
-		"title": "Later that month, Whittle was charged with conduct to the prejudice of good order and Military Discipline a second time for mutilating his pay book; he was reprimanded by the battalion's commanding officer as a result.",
-		"description": "By Christmas, as the Allies retreated from Malaya, Sembawang was \"the busiest airfield on Singapore island\", with two Dutch Glenn Martin bomber squadrons in addition to the remnants of the Hudson units, along with Nos.",
-		"link": "http://and.the.com",
-		"tags": null
-	},
-	{
-		"title": "The male's call is a soft proop-proop whistle, similar to that of the Common Teal, whereas the female has a Mallard-like descending quack, and a low croak when flushed.",
-		"description": "After his accession to the throne, John I of Portugal proceeded to annex the cities in whose military commanders supported Princess Beatrice and her husband's claims, namely Caminha, Braga and Guimarães among others.",
-		"link": "http://augustines.enlarged.xxx",
-		"tags": null
-	},
-	{
-		"title": "In May 1686, James sought to obtain a ruling from the English common-law courts that showed his power to dispense with Acts of Parliament was legal.",
-		"description": "8 ft) square, as well as two that were 3 by 1.",
-		"link": "http://less.order.com",
-		"tags": null
-	},
-	{
-		"title": "Johnson later described the series as \"the one championship we should have had but didn't get\".",
-		"description": "The common name is the same as the generic name of the Malagasy civet (Fossa fossana), but they are different species.",
-		"link": "http://them.crew.org",
-		"tags": null
-	},
-	{
-		"title": "In the early 670s, Cenwealh of Wessex died, and perhaps as a result of the stress caused by Wulfhere's military activity the West Saxon kingdom fragmented and came to be ruled by underkings, according to Bede.",
-		"description": "His widow, Eormenhild, is thought to have later become the abbess of Ely.",
-		"link": "http://route.expressed.org",
-		"tags": null
-	},
-	{
-		"title": "In Yalta he completed two more plays for the Art Theatre, composing with greater difficulty than in the days when he \"wrote serenely, the way I eat pancakes now\"; he took a year each over Three Sisters and The Cherry Orchard.",
-		"description": "In addition, Louise attempted to champion her late brother-in-law by announcing that she was his confidante and that Beatrice, a mere cipher, meant nothing to him.",
-		"link": "http://high.early.org",
-		"tags": null
-	},
-	{
-		"title": "Professional cooks were taught their trade through apprenticeship and practical training, working their way up in the highly defined kitchen hierarchy.",
-		"description": "He places his paws on her shoulders or grasps her around the waist and often licks her neck.",
-		"link": "http://late.wosm.xxx",
-		"tags": null
-	},
-	{
-		"title": "In order to further develop the Scout Movement in Hong Kong and to heighten it output quality, they published the document Scout Association of Hong Kong, Into the 21st century in 1999.",
-		"description": "The king, his wife Philippa of Lancaster, and several of his sons are buried in this monastery, today a UNESCO World Heritage Site.",
-		"link": "http://claim.was.xxx",
-		"tags": null
-	},
-	{
-		"title": "These flower for several weeks in early spring each year, an occasion celebrated by the Vancouver Cherry Blossom Festival.",
-		"description": "He holds the All-Star Game single-game record for assists (22), and the All-Star Game record for career assists (127).",
-		"link": "http://to.plan.xxx",
-		"tags": null
 	}
 ]

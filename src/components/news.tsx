@@ -2,13 +2,16 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import styles from "../styles/components/news.module.css";
 import textEllipsis from "../utils/textEllipsis";
+import { ExtractBaseUrl } from "../utils/Urls";
 
 interface newsTypes {
+	key: string;
 	title: string;
 	description: string;
 	link: string;
 	tags?: [tagsTypes] | null;
 	lastVisit?: string;
+	isAds: boolean;
 }
 
 interface tagsTypes {
@@ -17,26 +20,31 @@ interface tagsTypes {
 }
 
 export default function News({
+	key,
 	title,
 	description,
 	link,
 	tags,
 	lastVisit,
+	isAds,
 }: newsTypes) {
 	return (
-		<article className={styles.container}>
+		<article key={key} className={styles.container}>
 			<header>
 				<a href="#">
 					<span>
-						{link} <IoIosArrowForward /> ...
+						{isAds && <strong>Anúncio ·</strong>}
+						{ExtractBaseUrl(link)} <IoIosArrowForward /> ...
 					</span>
 
-					<h2>{textEllipsis(title, 40)}</h2>
+					<h2 dangerouslySetInnerHTML={{ __html: textEllipsis(title, 40) }} />
 				</a>
 			</header>
 
 			<main>
-				<p>{textEllipsis(description, 125)}</p>
+				<p
+					dangerouslySetInnerHTML={{ __html: textEllipsis(description, 125) }}
+				/>
 			</main>
 
 			<footer>
